@@ -1,0 +1,23 @@
+{
+  "name": "iknite-ex4",
+  "version": "1.0.0",
+  "description": "Building a efarm platform where farmers can list and showcase their items, buyers can see, buy and read more about the items and go forward to purchase the product. Farmers can upload products, edit, delete and even modify the items uploaded",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbianou-bradon/iknite-Ex4.git"
+  },
+  "author": "Mbianou Bradon, Kimboh Lovette, Samba Carlson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mbianou-bradon/iknite-Ex4/issues"
+  },
+  "homepage": "https://github.com/mbianou-bradon/iknite-Ex4#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "tailwindcss": "^3.2.4"
+  }
+}
