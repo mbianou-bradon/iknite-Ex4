@@ -12,13 +12,13 @@
 
     <!-----------header code goes here-------------->
 
-    <section class="py-8 px-4 w-full">
+    <section class="py-8 px-4 sm:px-16 md:px-24 2xl:px-64 w-full">
 
-        <h1 class="text-2xl text-slate-800 font-bold">Sell on our Product Page</h1>
+        <h1 class="text-2xl md:text-4xl text-slate-800 font-bold">Sell your product online</h1>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 my-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-12 my-8">
             <div class="w-full flex flex-col [&>*]:max-w-2xl [&>*]:h-fit gap-8">
-                <div class="add-photos flex flex-col justify-center items-center rounded-md shadow-inner p-4 border-2 border-dashed bg-slate-50 hover:bg-slate-100 cursor-pointer">
+                <div class="add-photos flex flex-col justify-center items-center rounded-md shadow-inner px-4 py-8 border-2 border-dashed bg-slate-50 hover:bg-slate-100 cursor-pointer">
                     <span class="text-2xl block p-4 rounded-full bg-slate-200 text-emerald-800">
                         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M13 19c0 .7.13 1.37.35 2H5a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2h14a2 2 0 0 1 2 2v8.35c-.63-.22-1.3-.35-2-.35V5H5v14h8m.96-6.71l-2.75 3.54l-1.96-2.36L6.5 17h6.85c.4-1.12 1.12-2.09 2.05-2.79l-1.44-1.92M20 18v-3h-2v3h-3v2h3v3h2v-3h3v-2h-3Z"/></svg>
                     </span>
@@ -40,24 +40,24 @@
                     <option value="2">Live Stock</option>
                 </select>
     
-                <select type="number" id="category" class="form-input category py-2 px-4 min-w-0 border w-full rounded-md hover:outline-one hover:border-gray-300 hover:outline-gray-400 focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-emerald-400">
+                <select type="number" id="category" class="form-input category py-2 px-4 min-w-0 border w-full rounded-md hover:outline-one hover:border-gray-300 hover:outline-gray-400 focus:outline-none focus:ring-1 focus:ring-offset-5 focus:ring-emerald-400">
                     <option value="">Availability</option>
-                    <option value="1">Food Stock</option>
-                    <option value="2">Live Stock</option>
+                    <option value="1">One Item</option>
+                    <option value="2">In Stock</option>
                 </select>
                 <textarea name="description" id="desc" cols="30" rows="5" class="form-input py-2 px-4 min-w-0 border w-full rounded-md hover:outline-one hover:border-gray-300 hover:outline-gray-400 focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-emerald-400" placeholder="Write description here ..."></textarea>
             </div>
         </div>
         <div class="w-full flex flex-row flex-wrap justify-end text-slate-800 font-medium gap-4 py-4">
-            <button class="py-2 px-4 bg-emerald-500 text-white rounded-md flex-1 sm:flex-none">Create Item</button>
-            <button class="py-2 px-4 bg-amber-500 text-white rounded-md flex-1 sm:flex-none">Discard Changes</button>
+            <button class="py-2 px-4 bg-emerald-500 hover:bg-emerald-700 transition-colors duration-300 ease-linear text-white rounded-md flex-1 sm:flex-none">Save product</button>
+            <button class="py-2 px-4 bg-amber-500 hover:bg-amber-700 transition-colors duration-300 ease-linear text-white rounded-md flex-1 sm:flex-none">Discard changes</button>
         </div>
 
     </section>
-    <div class="py-8 px-4 w-full">
+    <div class="py-8 px-4 sm:px-16 md:px-24 2xl:px-64 w-full">
         <hr>
     </div>
-    <section class="py-8 px-4 w-full">
+    <section class="py-8 px-4 sm:px-16 md:px-24 2xl:px-64 w-full">
         <h1 class="text-2xl font-semibold">Related Products</h1>
         <div>
             <!-------------------products go here------------>
