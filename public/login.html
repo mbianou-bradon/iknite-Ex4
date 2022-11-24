@@ -4,10 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
+    <title>Login</title>
     <link rel="stylesheet" href="main.css">
+    <style>
+        body{
+            background-image: url('assets/cows.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
 </head>
 <body>
-    <h1 class="text-red-600">login</h1>
+    <!-- nav bar -->
+    <nav id="navbar">
+        <div class="flex flex-row justify-between items-center">
+            <div class="bg-red-400 p-4">
+                LOGO
+            </div>
+            <div class="flex flex-row justify-center">
+                <a href="#">Home</a>
+                <a href="#">contacts</a>
+                <a href="#">about</a>
+            </div>
+            <div class="bg-green-600 px-3 py-2 rounded text-white">
+                LOGIN
+            </div>
+        </div>
+    </nav>
+
+    <!-- body section -->
+    <section id="body" class="mt-6 p-2 md:p-6">
+        <div class="flex flex-col space-y-3 items-center justify-center py-8 mx-auto lg:w-1/2" style="background-color: rgba(0, 0, 0, 0.2);">
+            <span class="text-2xl text-white">Login</span>
+            <form action="" class="flex flex-col space-y-4 items-end justify-center p-3 w-72">
+                <input type="text" name="contact" id="" placeholder="Email/Phone" class="py-1 px-2 bg-green-100 text-green-800 rounded-md w-full">
+                <input type="Password" name="password" id="" placeholder="Password" class="py-1 px-2 bg-green-100 text-green-800 rounded-md w-full">
+                <a href="#" class="text-white">Forgot password?</a>
+                <input type="submit" value="Login" class="bg-red-600 py-1 px-2 rounded-md text-white">
+            </form>
+            <span class="text-base text-white">Continue with ...</span>
+            <div class="flex flex-row space-x-6 justify-center items-center">
+                <a href="#" class="p-4 bg-red-600 rounded-full"><img src="assets/google.svg" alt="continue with google"></a>
+                <a href="#" class="p-4 bg-blue-600 rounded-full"><img src="assets/facebook.svg" alt="continue with facebook"></a>
+            </div>
+            <span class="text-base text-white"> <a href="signup.html">Don't have an account? ...</a></span>
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <footer id="footer mt-10">
+        <div class="bg-gray-700 p-8"></div>
+    </footer>
+
+
 </body>
 </html>
