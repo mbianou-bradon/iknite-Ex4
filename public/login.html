@@ -51,9 +51,11 @@
                 <input type="submit" value="Login" class="bg-red-600 py-1 px-2 rounded-md text-white hover:bg-green-600">
             </form>
             <span class="text-base text-white">Continue with ...</span>
-            <div class="flex flex-row space-x-6 justify-center items-center">
-                <a href="#" class="p-4 bg-red-600 rounded-full hover:scale-105 transition-transform"><img src="assets/google.svg" alt="continue with google"></a>
-                <a href="#" class="p-4 bg-blue-600 rounded-full hover:scale-105 transition-transform"><img src="assets/facebook.svg" alt="continue with facebook"></a>
+            <div class="flex flex-row justify-center items-center">
+                <a href="#" class="mr-3 p-4 bg-red-600 rounded-full hover:scale-105 transition-transform hidden md:block"><img src="assets/google.svg" alt="continue with google"></a>
+                <a href="#" class="ml-3 p-4 bg-blue-600 rounded-full hover:scale-105 transition-transform hidden md:block"><img src="assets/facebook.svg" alt="continue with facebook"></a>
+                <a href="#" class="mr-3 text-base text-white bg-red-600 hover:scale-105 transition-transform px-2 py-1 md:hidden">Google</a>
+                <a href="#" class="ml-3 text-base text-white bg-blue-600 hover:scale-105 transition-transform px-2 py-1 md:hidden">Facebook</a>
             </div>
             <span class="text-base text-white"> <a href="signup.html">Don't have an account? ...</a></span>
         </div>
