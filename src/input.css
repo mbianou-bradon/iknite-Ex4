@@ -3,3 +3,58 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn {
+   @apply px-5 py-3 tracking-wide bg-emerald-500 text-white rounded-md text-center shadow-md text-sm font-bold;
+}
+
+.card {
+    @apply flex flex-col max-w-screen-sm h-auto p-3 bg-gray-100 rounded-sm;
+}
+
+.card-img {
+    @apply object-cover object-center w-full mb-2 rounded-sm;
+}
+
+.card-rating {
+    @apply text-amber-400 flex mb-2 font-extrabold;
+}
+
+.card-body p {
+    @apply text-slate-500 text-[14px] my-2;
+}
+
+.card-head {
+    @apply font-extrabold
+}
+
+
+.card-price {
+    @apply text-emerald-600 font-bold
+}
+
+.testimonial-img {
+    @apply  w-16 mr-3 p-1;
+}
+
+
+
+#hero {
+    border-radius: 3rem;
+    clip-path: polygon(0 0, 100% 0, 100% 76%, 6% 100%, 0 99%, 0% 50%);
+}
+
+.woman {
+    background-image: url(./assets/woman-bg.svg);
+}
+
+
+
+.icon {
+    @apply text-emerald-500 mr-2 bg-[#e9f2e4] h-fit rounded-full p-2;
+}
+
+#contact {
+    border-radius: 3rem;
+    clip-path: polygon(95% 0, 100% 0, 100% 43%, 100% 78%, 100% 100%, 0 100%, 0 84%, 0 51%, 3% 45%);
+}
