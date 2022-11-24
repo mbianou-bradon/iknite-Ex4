@@ -12,6 +12,17 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+        input{
+            transition: 0.4s;
+        }
+        input[type=text]:focus, input[type=password]:focus{
+            outline: none;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.781);
+            transition: none;
+        }
+        input[type=submit]:hover{
+            background-color:rgb(22 163 74);
+        }
     </style>
 </head>
 <body>
@@ -36,7 +47,7 @@
     <section id="body" class="mt-6 p-2 md:p-6">
         <div class="flex flex-col space-y-3 items-center justify-center py-8 mx-auto lg:w-1/2" style="background-color: rgba(0, 0, 0, 0.2);">
             <span class="text-2xl text-white">Sign up</span>
-            <form action="" class="flex flex-col space-y-4 items-end justify-center p-3 w-72">
+            <form action="" class="flex flex-col space-y-4 items-end justify-center p-3 w-72 ">
                 <input type="text" name="fullname" id="" placeholder="Fullname" class="py-1 px-2 bg-green-100 text-green-800 rounded-md w-full">
                 <input type="text" name="contact" id="" placeholder="Email/Phone" class="py-1 px-2 bg-green-100 text-green-800 rounded-md w-full">
                 <input type="Password" name="password" id="" placeholder="Password" class="py-1 px-2 bg-green-100 text-green-800 rounded-md w-full">
@@ -45,8 +56,8 @@
             </form>
             <span class="text-base text-white">sign up with ...</span>
             <div class="flex flex-row space-x-6 justify-center items-center">
-                <a href="#" class="p-4 bg-red-600 rounded-full"><img src="assets/google.svg" alt="sign up with google"></a>
-                <a href="#" class="p-4 bg-blue-600 rounded-full"><img src="assets/facebook.svg" alt="sign up with facebook"></a>
+                <a href="#" class="p-4 bg-red-600 rounded-full hover:scale-105 transition-transform"><img src="assets/google.svg" alt="sign up with google"></a>
+                <a href="#" class="p-4 bg-blue-600 rounded-full hover:scale-105 transition-transform"><img src="assets/facebook.svg" alt="sign up with facebook"></a>
             </div>
             <span class="text-base text-white"> <a href="#"> already have an account ...</a></span>
         </div>
