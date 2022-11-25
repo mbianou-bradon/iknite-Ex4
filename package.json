@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/mbianou-bradon/iknite-Ex4#readme",
   "devDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
     "autoprefixer": "^10.4.13",
     "tailwindcss": "^3.2.4"
   }
