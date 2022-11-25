@@ -9,36 +9,67 @@
 </head>
 <body class="container mx-auto bg-[#fefefe]">
     <nav>
-        <div class="flex justify-between my-7 items-center">
-            <div class="brand-name">
-                <h2 class="text-2xl text-emerald-500 font-extrabold">Farmino</h2>
+        <div class="lg:flex justify-between my-7 items-center relative">
+            <div class="brand-name flex justify-between items-center text-emerald-500 px-2">
+                <h2 class="text-2xl  font-extrabold">Farmino</h2>
+                <div class="lg:hidden text-5xl">
+                    <svg id="openMenu" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M3 18v-2h18v2Zm0-5v-2h18v2Zm0-5V6h18v2Z"/></svg>
+                </div>
             </div>
 
-            <div class="text-[12px] text-gray-400 flex items-center gap-1 bg-gray-200 rounded-xl ring-1 ring-offset-2 focus:ring-emerald-400 drop-shadow px-4 py-2">
+            <div class="text-[12px] text-gray-400 lg:flex items-center gap-1 bg-gray-200 rounded-xl ring-1 ring-offset-2 focus:ring-emerald-400 drop-shadow px-4 py-2 hidden">
                 <div class="px-2 text-[16px]">
                     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="m18.9 20.3l-5.6-5.6q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075q-.35.975-.95 1.725l5.625 5.625q.275.275.275.675t-.3.7q-.275.275-.7.275q-.425 0-.7-.275ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5Q7.625 5 6.312 6.312Q5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"/></svg>
                 </div>
                 <input class="bg-transparent w-80 focus:outline-none mr-2" type="text" placeholder="what would you like for dinner tonight?">
             </div>
 
-            <ul class="flex gap-10">
+            <ul class="hidden lg:flex gap-10">
                 <li><a href="">Home</a></li>
                 <li><a href="">Products</a></li>
                 <li><a href="">Testimonies</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
 
-            <ul class="flex gap-10">
+            <ul class="hidden lg:flex gap-10">
                 <li class="text-emerald-500"><a href="">Sign in</a></li>
                 <li><a href="" class="btn">Sign Up</a></li>
             </ul>
+
+            <div class="hidden bg-emerald-500 w-full max-h-screen rounded-sm z-10 absolute top-2" id="navBarMobile">
+
+                <div class=" bg-white p-4 w-full m-2 relative">
+                    <div class="right-0 absolute text-5xl text-emerald-500">
+                        <svg id="closeMenu" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="m12 13.4l-4.9 4.9q-.275.275-.7.275q-.425 0-.7-.275q-.275-.275-.275-.7q0-.425.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7q0-.425.275-.7q.275-.275.7-.275q.425 0 .7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275q.425 0 .7.275q.275.275.275.7q0 .425-.275.7L13.4 12l4.9 4.9q.275.275.275.7q0 .425-.275.7q-.275.275-.7.275q-.425 0-.7-.275Z"/></svg>
+                    </div>
+                    <div class="text-[12px] text-gray-400 flex items-center gap-1 bg-gray-200 rounded-xl ring-1 ring-offset-2 focus:ring-emerald-400 drop-shadow px-4 py-2 mt-14 mb-4">
+                        <div class="px-2 text-[16px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="m18.9 20.3l-5.6-5.6q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075q-.35.975-.95 1.725l5.625 5.625q.275.275.275.675t-.3.7q-.275.275-.7.275q-.425 0-.7-.275ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5Q7.625 5 6.312 6.312Q5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"/></svg>
+                        </div>
+                        <input class="bg-transparent w-80 focus:outline-none mr-2" type="text" placeholder="what would you like for dinner tonight?">
+                    </div>
+
+                    <ul class="flex flex-col gap-8">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">Testimonies</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+
+                    <ul class="mt-2 border-t border-emerald-100">
+                        <li class="text-emerald-500 my-4"><a href="">Sign in</a></li>
+                        <li class="btn w-fit m-0"><a href="">Sign Up</a></li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
     </nav>
 
-    <header class="bg-[#fef3d7] max-w-max h-auto p-16 mb-20" id="hero">
-        <div class="flex justify-between items-center mb-20">
-            <div class="mt-20 pr-28 w-3/5">
-                <h2 class="text-6xl font-extrabold tracking-wider">Delicious and fresh produce from farmers</h2>
+    <header class="bg-[#fef3d7] max-w-max h-auto p-12 md:p-16 mb-20" id="hero">
+        <div class="flex md:flex-row flex-col-reverse justify-between items-center mb-20">
+            <div class="mt-20 md:pr-28 w-full md:w-3/5">
+                <h2 class="text-4xl md:text-6xl font-extrabold tracking-wider">Delicious and fresh produce from farmers</h2>
                 <p class="text-slate-600 py-5">Buy local fruits and vegetables herbs, meat and fish, and dairy 
                     products delivered in your city
                 </p>
@@ -46,9 +77,71 @@
                 <a href="" class="btn">Get Started</a>
             </div>
 
-            <div>
+            <div class="relative">
                 <div class="woman">
                     <img src="./assets/senior-woman-with-vegetables.png" alt="" class="w-[500px] h-auto">
+                </div>
+
+                <div class="flex gap-3 items-center text-[10px] text-center bg-white rounded-lg absolute p-2 md:p-5 -right-10 -bottom-10 md:-right-12 md:bottom-24">
+                    <div>
+                        <img src="./assets/tomatoes.jpg" alt="" class="w-10 h-auto">
+                    </div>
+                    <div >
+                        <h2 class="font-semibold">Tomatoes</h2>
+                        <div class="card-rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275Z"/></svg>
+                        </div>
+                        <p class="text-emerald-500">XAF 3000</p>
+                    </div>
+                    <div class="text-white bg-emerald-500 rounded-md h-fit p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64"><path fill="currentColor" d="M38 26V2H26v24H2v12h24v24h12V38h24V26z"/></svg>
+                    </div>
+                </div>
+
+
+                <div class="flex gap-3 items-center text-[10px] text-center bg-white rounded-lg absolute p-2 md:p-5 -left-12 bottom-2 md:left-12 md:-bottom-3">
+                    <div>
+                        <img src="./assets/tomatoes.jpg" alt="" class="w-10 h-auto">
+                    </div>
+                    <div >
+                        <h2 class="font-semibold">Tomatoes</h2>
+                        <div class="card-rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275Z"/></svg>
+                        </div>
+                        <p class="text-emerald-500">XAF 3000</p>
+                    </div>
+                    <div class="text-white bg-emerald-500 rounded-md h-fit p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64"><path fill="currentColor" d="M38 26V2H26v24H2v12h24v24h12V38h24V26z"/></svg>
+                    </div>
+                </div>
+
+
+                <div class="flex items-center flex-col gap-1 text-[10px] text-center bg-white rounded-lg absolute p-2 w-20 -left-8 top-16 md:w-28 md:-left-16 md:top-32">
+                    <div>
+                        <img src="./assets/tomatoes.jpg" alt="" class="w-20 h-auto">
+                    </div>
+                    <div >
+                        <h2 class="font-semibold">Tomatoes</h2>
+                        <div class="card-rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275Z"/></svg>
+                        </div>
+                        <p class="text-emerald-500">XAF 3000</p>
+                    </div>
+                    <div class="text-white bg-emerald-500 rounded-md w-fit h-fit p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64"><path fill="currentColor" d="M38 26V2H26v24H2v12h24v24h12V38h24V26z"/></svg>
+                    </div>
                 </div>
             </div>
         </div>
@@ -56,8 +149,8 @@
 
     <main>
         <section id="value" class="px-4 sm:px-16 md:px-24 2xl:px-64 mb-24">
-            <div class="grid grid-cols-4">
-                <div class="flex mr-10">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-8 w-full">
+                <div class="flex md:mr-10">
                     <div class="icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M19.5 8H17V6c0-1.1-.9-2-2-2H3c-1.1 0-2 .9-2 2v9c0 1.1.9 2 2 2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h1c.55 0 1-.45 1-1v-3.33c0-.43-.14-.85-.4-1.2L20.3 8.4c-.19-.25-.49-.4-.8-.4zM6 18c-.55 0-1-.45-1-1s.45-1 1-1s1 .45 1 1s-.45 1-1 1zm13.5-8.5l1.96 2.5H17V9.5h2.5zM18 18c-.55 0-1-.45-1-1s.45-1 1-1s1 .45 1 1s-.45 1-1 1z"/></svg>
                     </div>
@@ -68,7 +161,7 @@
 
                 </div>
 
-                <div class="flex mr-10">
+                <div class="flex md:mr-10">
                     <div class="icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><path fill="currentColor" d="M17 8h1v11H2V8h1V6c0-2.76 2.24-5 5-5c.71 0 1.39.15 2 .42A4.94 4.94 0 0 1 12 1c2.76 0 5 2.24 5 5v2zM5 6v2h2V6c0-1.13.39-2.16 1.02-3H8C6.35 3 5 4.35 5 6zm10 2V6c0-1.65-1.35-3-3-3h-.02A4.98 4.98 0 0 1 13 6v2h2zm-5-4.22C9.39 4.33 9 5.12 9 6v2h2V6c0-.88-.39-1.67-1-2.22z"/></svg>
                     </div>
@@ -79,7 +172,7 @@
 
                 </div> 
 
-                 <div class="flex mr-10">
+                 <div class="flex md:mr-10">
                     <div class="icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M2 22v-2s5-2 10-2s10 2 10 2v2H2m9.3-12.9c-1.2-3.9-7.3-3-7.3-3s.2 7.8 5.9 6.6C9.5 9.8 8 9 8 9c2.8 0 3 3.4 3 3.4V17h2v-4.2s0-3.9 3-4.9c0 0-2 3-2 5c7 .7 7-8.9 7-8.9s-8.9-1-9.7 5.1Z"/></svg>
                     </div>
@@ -108,7 +201,7 @@
         <!-- Products card -->
 
         <section class="px-4 sm:px-16 md:px-24 2xl:px-64 mb-24">
-            <div class="grid grid-cols-4 gap-10 my-10">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 my-10">
 
                 <div class="card">
                     <div class="card-img">
@@ -144,7 +237,7 @@
 
 
                 </div>
-
+                
                 <div class="card">
                     <div class="card-img">
                         <img src="./assets/yarms.jpeg" alt="">
@@ -255,10 +348,10 @@
 
         <section id="testimonial" class="px-4 sm:px-16 md:px-24 2xl:px-64 mb-24">
 
-            <div class="flex flex-col justify-center items-center bg-[#eef4ea] rounded-3xl pt-24 pb-32 gap-10">
-                <h2 class="text-2xl font-bold">Let's see what our clients says</h2>
+        <div class="flex flex-col justify-center items-center bg-[#eef4ea] rounded-3xl pt-12 md:pt-24 pb-16 md:pb-32 gap-10">
+                <h2 class="text-lg sm:text-xl md:text-2xl font-bold">Let's see what our clients says</h2>
 
-                <div class="flex flex-col w-1/3 bg-white rounded-2xl drop-shadow-lg py-10 px-10">
+                <div class="flex flex-col w-3/5 md:w-2/5 bg-white rounded-2xl drop-shadow-lg py-5 md:py-10 px-5 md:px-10">
                     <div class="flex mb-5">
                         <div class="testimonial-img">
                             <img src="./assets/cows.jpg" alt="">
@@ -275,7 +368,7 @@
                         </div>
                     </div>
 
-                    <p class="text-[14px] text-slate-600">Only natural ingredients, grown and produced in the village
+                    <p class="text-[10px] md:text-[14px] text-slate-600">Only natural ingredients, grown and produced in the village
                         , with care and love for out health, love and longevity ! 
                         I always choose only you, I have never regretted it!
                     </p>
@@ -291,19 +384,19 @@
     </main>
 
 
-    <footer class="mt-32 mb-20" >
+    <footer class="mt-16 mb-10 md:mt-32 md:mb-20" >
 
-    <div class="bg-[#f1f6ed] pt-24 pb-14 mb-10" id="contact">
+    <div class="bg-[#f1f6ed] px-5 pt-24 pb-14 mb-10" id="contact">
             <div class="news-paper">
-                <div class="flex flex-col items-end mb-14 mr-24">
+                <div class="flex flex-col items-center md:items-end mx-10 mb-14 md:mr-24">
                     <div class="mb-10 text-center">
                         <h2 class="text-2xl font-bold mb-2">Subscribe to the newsletter</h2>
                         <p class="text-[14px] text-slate-500">you will get a 20% discount on your first order</p>
 
                     </div>
-                    <div class="flex items-center gap-4">
+                    <div class="flex items-center flex-wrap gap-4">
                         <div class="bg-white border px-5 py-2 rounded-md">
-                            <input type="email" name="email" id="email" placeholder="Enter your email" class=" focus:outline-none ring-0">
+                            <input type="email" name="email" id="email" placeholder="Enter your email" class=" focus:outline-none ring-0 min-w-0">
                         </div>
                         <a href="" class="btn">Subscribe</a>
                     </div>
@@ -311,9 +404,9 @@
             </div>
 
 
-            <div class="grid grid-cols-4 text-[12px]">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 text-[12px]">
 
-                <div class="w-[350px] pr-5 ml-10">
+                <div class="md:w-[350px] pr-5 md:ml-10">
                     <h2 class="text-emerald-500 font-extrabold pb-2">FARMINO</h2>
                     <p class="text-[12px] pb-5">Best place for order food from farmers.
                         vegetables and products directly from the farm to 
@@ -337,27 +430,33 @@
                     </div>
                 </div>
 
-                <div class="ml-20">
-                    <ul>
-                        <li class="font-extrabold pb-2">Features</li>
-                        <li class="pb-2"><a href="">Home</a></li>
-                        <li class="pb-2"><a href="">Products</a></li>
-                        <li class="pb-2"><a href="">Testimonies</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
+                <div class="grid grid-cols-2 my-4 sm:my-0">
+
+                    <div class="md:ml-20">
+                        
+                        <ul>
+                            <li class="font-extrabold pb-2">Features</li>
+                            <li class="pb-2"><a href="">Home</a></li>
+                            <li class="pb-2"><a href="">Products</a></li>
+                            <li class="pb-2"><a href="">Testimonies</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        
+                        <ul>
+                            <li class="font-extrabold pb-2">Solution</li>
+                            <li class="pb-2"><a href="">FAQs</a></li>
+                            <li class="pb-2"><a href="">Privacy Policy</a></li>
+                            <li class="pb-2"><a href="">Terms and Condition</a></li>
+                            <li><a href="">Blog</a></li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div>
-                    <ul>
-                        <li class="font-extrabold pb-2">Solution</li>
-                        <li class="pb-2"><a href="">FAQs</a></li>
-                        <li class="pb-2"><a href="">Privacy Policy</a></li>
-                        <li class="pb-2"><a href="">Terms and Condition</a></li>
-                        <li><a href="">Blog</a></li>
-                    </ul>
-                </div>
-
-                <div>
+                    
                     <ul>
                         <li class="font-extrabold pb-2">Contact</li>
                         <li class="flex items-center pb-2">
@@ -396,7 +495,7 @@
 
     </footer>
 
-
-
+    
+ <script src="./main.js"></script>
 </body>
 </html>
