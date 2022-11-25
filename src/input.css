@@ -54,7 +54,3 @@
     @apply text-emerald-500 mr-2 bg-[#e9f2e4] h-fit rounded-full p-2;
 }
 
-#contact {
-    border-radius: 3rem;
-    clip-path: polygon(95% 0, 100% 0, 100% 43%, 100% 78%, 100% 100%, 0 100%, 0 84%, 0 51%, 3% 45%);
-}
