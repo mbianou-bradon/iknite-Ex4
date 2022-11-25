@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        body{
+            background-image: url('assets/yams.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        input{
+            transition: 0.4s;
+        }
+        input[type=text]:focus, input[type=password]:focus{
+            outline: none;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.781);
+            transition: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- nav bar -->
+    <nav id="navbar">
+        <div class="flex flex-row justify-between items-center">
+            <div class="bg-red-400 p-4">
+                LOGO
+            </div>
+            <div class="flex flex-row justify-center">
+                <a href="#">Home</a>
+                <a href="#">contacts</a>
+                <a href="#">about</a>
+            </div>
+            <div class="bg-green-600 px-3 py-2 rounded text-white">
+                LOGIN
+            </div>
+        </div>
+    </nav>
+
+    <!-- body section -->
+    <section id="body" class="mt-6 p-2 md:p-6">
+        <div class="flex flex-col space-y-3 items-center justify-center py-8 mx-auto lg:w-1/2" style="background-color: rgba(0, 0, 0, 0.3);">
+            <span class="text-2xl text-white">Sign up</span>
+            <form action="" class="flex flex-col space-y-4 items-end justify-center p-3 w-72 ">
+                <input type="text" name="fullname" id="" placeholder="Fullname" class="py-1 px-2 bg-green-100 text-green-800 rounded-md w-full">
+                <input type="text" name="contact" id="" placeholder="Email/Phone" class="py-1 px-2 bg-green-100 text-green-800 rounded-md w-full">
+                <input type="Password" name="password" id="" placeholder="Password" class="py-1 px-2 bg-green-100 text-green-800 rounded-md w-full">
+                <input type="password" name="password" id="" placeholder="Confirm Password" class="py-1 px-2 bg-green-100 text-green-800 rounded-md w-full">
+                <input type="submit" value="Let's Begin" class="bg-red-600 py-1 px-2 rounded-md text-white hover:bg-green-600">
+            </form>
+            <span class="hidden md:block text-base text-white">sign up with ...</span>
+            <span class="md:hidden text-base text-white">Continue with</span>
+            <div class="flex flex-row justify-between items-center">
+                <a href="#" class="mr-3 p-4 bg-red-600 rounded-full hover:scale-105 transition-transform md:hidden"><img src="assets/google.svg" alt="sign up with google"></a>
+                <a href="#" class="ml-3 p-4 bg-blue-600 rounded-full hover:scale-105 transition-transform md:hidden"><img src="assets/facebook.svg" alt="sign up with facebook"></a>
+                <a href="#" class="mr-3 text-base text-white bg-red-600 hover:scale-105 transition-transform px-2 py-1 hidden md:block">Google</a>
+                <a href="#" class="ml-3 text-base text-white bg-blue-600 hover:scale-105 transition-transform px-2 py-1 hidden md:block">Facebook</a>
+            </div>
+            <span class="text-base text-white"> <a href="login.html"> already have an account ...</a></span>
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <footer id="footer mt-10">
+        <div class="bg-gray-700 p-8"></div>
+    </footer>
+
+
+</body>
+</html>
