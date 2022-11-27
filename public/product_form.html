@@ -1,46 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css">
+    <link rel="icon" href="./assets/farmino-logo.png" type="image/x-icon">
     <title>Product Creation Form</title>
 </head>
-<body class="container mx-auto">
+<body class="container mx-auto bg-[#fefefe] selection:bg-amber-400 selection:text-slate-50">
     <!-----------header code goes here-------------->
 
         <nav>
         <div class="lg:flex justify-between my-7 items-center relative">
             <div class="brand-name flex justify-between items-center text-emerald-500 px-2">
-                <h2 class="text-2xl  font-extrabold">Farmino</h2>
+                <a href="./index.html"><h2 class="text-2xl  font-extrabold">Farmino</h2></a>
                 <div class="lg:hidden text-5xl">
                     <svg id="openMenu" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M3 18v-2h18v2Zm0-5v-2h18v2Zm0-5V6h18v2Z"/></svg>
                 </div>
             </div>
 
-            <div class="text-[12px] text-gray-400 lg:flex items-center gap-1 bg-gray-200 rounded-xl ring-1 ring-offset-2 focus:ring-emerald-400 drop-shadow px-4 py-2 hidden">
+            <div class="text-[12px] text-gray-400 lg:flex items-center gap-1 bg-gray-200 rounded-xl ring-1 ring-offset-2 focus:ring-emerald-400 drop-shadow hidden">
                 <div class="px-2 text-[16px]">
                     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="m18.9 20.3l-5.6-5.6q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075q-.35.975-.95 1.725l5.625 5.625q.275.275.275.675t-.3.7q-.275.275-.7.275q-.425 0-.7-.275ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5Q7.625 5 6.312 6.312Q5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"/></svg>
                 </div>
-                <input class="bg-transparent w-80 focus:outline-none mr-2" type="text" placeholder="what would you like for dinner tonight?">
+                <input class="input-btn w-80 py-1" type="text" placeholder="what would you like for dinner tonight?">
             </div>
 
             <ul class="hidden lg:flex gap-10">
-                <li><a href="">Home</a></li>
-                <li><a href="">Products</a></li>
-                <li><a href="">Testimonies</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="./index.html#">Home</a></li>
+                <li><a href="./index.html#product">Products</a></li>
+                <li><a href="./index.html#testimonial">Testimonies</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
 
             <ul class="hidden lg:flex gap-10">
-                <li class="text-emerald-500"><a href="">Sign in</a></li>
-                <li><a href="" class="btn">Sign Up</a></li>
+                <li class="text-emerald-500"><a href="./login.html">Sign in</a></li>
+                <li><a href="./signup.html" class="btn">Sign Up</a></li>
             </ul>
 
-            <div class="hidden bg-emerald-500 w-full max-h-screen rounded-sm z-10 absolute top-2" id="navBarMobile">
+            <div class="hidden bg-emerald-500 w-[95%] max-h-fit rounded-sm z-10 absolute top-0 right-4 p-2" id="navBarMobile">
 
-                <div class=" bg-white p-4 w-full m-2 relative">
+                <div class=" bg-white p-4 w-full h-[80%] relative">
                     <div class="right-0 absolute text-5xl text-emerald-500">
                         <svg id="closeMenu" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="m12 13.4l-4.9 4.9q-.275.275-.7.275q-.425 0-.7-.275q-.275-.275-.275-.7q0-.425.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7q0-.425.275-.7q.275-.275.7-.275q.425 0 .7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275q.425 0 .7.275q.275.275.275.7q0 .425-.275.7L13.4 12l4.9 4.9q.275.275.275.7q0 .425-.275.7q-.275.275-.7.275q-.425 0-.7-.275Z"/></svg>
                     </div>
@@ -48,19 +49,19 @@
                         <div class="px-2 text-[16px]">
                             <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="m18.9 20.3l-5.6-5.6q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075q-.35.975-.95 1.725l5.625 5.625q.275.275.275.675t-.3.7q-.275.275-.7.275q-.425 0-.7-.275ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5Q7.625 5 6.312 6.312Q5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"/></svg>
                         </div>
-                        <input class="bg-transparent w-80 focus:outline-none mr-2" type="text" placeholder="what would you like for dinner tonight?">
+                        <input class="input-btn w-80 py-1" type="text" placeholder="what would you like for dinner tonight?">
                     </div>
 
                     <ul class="flex flex-col gap-8">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Products</a></li>
-                        <li><a href="">Testimonies</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./index.html#product">Products</a></li>
+                        <li><a href="./index.html#testimonial">Testimonies</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
 
                     <ul class="mt-2 border-t border-emerald-100">
-                        <li class="text-emerald-500 my-4"><a href="">Sign in</a></li>
-                        <li class="btn w-fit m-0"><a href="">Sign Up</a></li>
+                        <li class="text-emerald-500 my-4"><a href="./login.html">Sign in</a></li>
+                        <li class="btn w-fit m-0"><a href="./signup.html">Sign Up</a></li>
                     </ul>
                 </div>
 
@@ -131,12 +132,12 @@
                     <div class="flex flex-col items-center md:items-end mx-10 mb-14 md:mr-24">
                         <div class="mb-10 text-center">
                             <h2 class="text-2xl font-bold mb-2">Subscribe to the newsletter</h2>
-                            <p class="text-[14px] text-slate-500">you will get a 20% discount on your first order</p>
+                            <p class="text-sm text-slate-500">you will get a 20% discount on your first order</p>
     
                         </div>
                         <div class="flex items-center flex-wrap gap-4">
-                            <div class="bg-white border px-5 py-2 rounded-md">
-                                <input type="email" name="email" id="email" placeholder="Enter your email" class=" focus:outline-none ring-0 min-w-0">
+                            <div class="bg-white border px-5 py-1 rounded-md">
+                                <input type="email" name="email" id="email" placeholder="Enter your email" class="input-btn">
                             </div>
                             <a href="" class="btn">Subscribe</a>
                         </div>
@@ -144,11 +145,11 @@
                 </div>
     
     
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 text-[12px]">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 text-sm">
     
                     <div class="md:w-[350px] pr-5 md:ml-10">
                         <h2 class="text-emerald-500 font-extrabold pb-2">FARMINO</h2>
-                        <p class="text-[12px] pb-5">Best place for order food from farmers.
+                        <p class="pb-5">Best place for order food from farmers.
                             vegetables and products directly from the farm to 
                             your door. 
                             Serve as a link to between farmers and customers, by providing a platform 
@@ -176,10 +177,10 @@
                             
                             <ul>
                                 <li class="font-extrabold pb-2">Features</li>
-                                <li class="pb-2"><a href="">Home</a></li>
-                                <li class="pb-2"><a href="">Products</a></li>
-                                <li class="pb-2"><a href="">Testimonies</a></li>
-                                <li><a href="">Contact</a></li>
+                                <li class="pb-2"><a href="./index.html">Home</a></li>
+                                <li class="pb-2"><a href="./index.html#product">Products</a></li>
+                                <li class="pb-2"><a href="./index.html#testimonial">Testimonies</a></li>
+                                <li><a href="#contact">Contact</a></li>
                             </ul>
                         </div>
     
