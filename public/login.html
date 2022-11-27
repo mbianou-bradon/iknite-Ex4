@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="./assets/farmino-logo.png" type="image/x-icon">
     <style>
         body{
-            background-image: radial-gradient(ellipse at 0px 0px, rgba(254, 243, 215, 0.692) 40%,  white  50%, rgba(254, 243, 215, 0.637) 60%, rgba(254, 243, 215, 0.719) 100%), url('assets/onions.jpg');
+            background-image: radial-gradient(ellipse at 0px 0px, rgba(254, 243, 215, 0.3) 40%,  white  50%, rgba(254, 243, 215, 0.637) 60%, rgba(254, 243, 215, 0.719) 100%), url('assets/onions.jpg');
             background-repeat: no-repeat;
             background-size: cover;
         }
@@ -22,21 +23,21 @@
         }
     </style>
 </head>
-<body>
+<body class="bg-[#fefefe] selection:bg-amber-400 selection:text-slate-50">
     <!-- nav bar -->
     <nav class="mx-4 md:mx-12 p-6">
         <div class="lg:flex justify-between my-7 items-center relative">
             <div class="brand-name flex justify-between items-center text-emerald-500 px-2">
-                <h2 class="text-2xl  font-extrabold">Farmino</h2>
+               <a href="./index.html"><h2 class="text-2xl  font-extrabold">Farmino</h2></a>
                 <div class="lg:hidden text-5xl">
                     <svg id="openMenu" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M3 18v-2h18v2Zm0-5v-2h18v2Zm0-5V6h18v2Z"/></svg>
                 </div>
             </div>
             <ul id="topnav" class="hidden lg:flex gap-10">
-                <li><a href="">Home</a></li>
-                <li><a href="">Products</a></li>
-                <li><a href="">Testimonies</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index.html#product">Products</a></li>
+                <li><a href="./index.html#testimonial">Testimonies</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
 
             <ul class="hidden lg:flex gap-10 items-center">
@@ -51,21 +52,21 @@
                 <li><a href="signup.html" class="btn hover:bg-green-600">Sign up</a></li>
             </ul>
 
-            <div class="hidden bg-emerald-500 w-full max-h-screen rounded-sm z-10 absolute top-2" id="navBarMobile">
+            <div class="hidden bg-emerald-500 w-full max-h-fit rounded-sm z-10 absolute top-0 right-4 p-2" id="navBarMobile">
 
-                <div class=" bg-white p-6 w-full m-2 relative">
+                <div class="bg-white p-4 w-full h-[80%] relative">
                     <div class="right-4 absolute text-5xl text-emerald-500">
                         <svg id="closeMenu" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="m12 13.4l-4.9 4.9q-.275.275-.7.275q-.425 0-.7-.275q-.275-.275-.275-.7q0-.425.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7q0-.425.275-.7q.275-.275.7-.275q.425 0 .7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275q.425 0 .7.275q.275.275.275.7q0 .425-.275.7L13.4 12l4.9 4.9q.275.275.275.7q0 .425-.275.7q-.275.275-.7.275q-.425 0-.7-.275Z"/></svg>
                     </div>
                     <ul class="flex flex-col gap-8">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Products</a></li>
-                        <li><a href="">Testimonies</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./index.html#product">Products</a></li>
+                        <li><a href="./index.html#testimonial">Testimonies</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
 
                     <ul class="mt-2 border-t border-emerald-100">
-                        <li class="text-emerald-500 my-4"><a href="">Sign up</a></li>
+                        <li class="text-emerald-500 my-4"><a href="./signup.html">Sign up</a></li>
                     </ul>
                 </div>
 
@@ -99,17 +100,17 @@
 
         <div class="bg-[#f1f6ed] px-5 pt-24 pb-14" id="contact">
                 <div class="news-paper">
-                    <div class="flex flex-col items-center md:items-start mx-10 mb-14 md:mr-24">
+                    <div class="flex flex-col items-center md:items-end mx-10 mb-14 md:mr-24">
                         <div class="mb-6 text-center">
                             <h2 class="text-2xl font-bold mb-2">Subscribe to the newsletter</h2>
                             <p class="text-[14px] text-slate-500">you will get a 20% discount on your first order</p>
     
                         </div>
                         <div class="flex items-center flex-wrap gap-4">
-                            <div class="">
-                                <input type="email" name="email" id="email" placeholder="Enter your email" class="py-1 px-2 ring-0 min-w-0">
+                            <div class="bg-white border px-5 py-1 rounded-md">
+                                <input type="email" name="email" id="email" placeholder="Enter your email" class="input-btn">
                             </div>
-                            <a href="" class="bg-emerald-600 px-2 py-1 text-white rounded">Subscribe</a>
+                            <a href="" class="btn">Subscribe</a>
                         </div>
                     </div>    
                 </div>
@@ -145,10 +146,10 @@
                             
                             <ul>
                                 <li class="font-extrabold pb-2">Features</li>
-                                <li class="pb-2"><a href="">Home</a></li>
-                                <li class="pb-2"><a href="">Products</a></li>
-                                <li class="pb-2"><a href="">Testimonies</a></li>
-                                <li><a href="">Contact</a></li>
+                                <li class="pb-2"><a href="./index.html">Home</a></li>
+                                <li class="pb-2"><a href="./index.html#product">Products</a></li>
+                                <li class="pb-2"><a href="./index.html#testimonial">Testimonies</a></li>
+                                <li><a href="#contact">Contact</a></li>
                             </ul>
                         </div>
     
