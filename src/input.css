@@ -54,3 +54,7 @@
     @apply text-emerald-500 mr-2 bg-[#e9f2e4] h-fit rounded-full p-2;
 }
 
+.input-btn {
+    @apply  focus:ring-0 bg-transparent border-0 text-sm text-green-500 italic ;
+}
+
