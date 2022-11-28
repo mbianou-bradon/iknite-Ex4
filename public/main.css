@@ -2140,6 +2140,10 @@ select {
     padding-bottom: 8rem;
   }
 
+  .md\:text-left {
+    text-align: left;
+  }
+
   .md\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
