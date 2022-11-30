@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="./assets/farmino-logo.png" type="image/x-icon">
+    <style>
+        input, .btn{
+            transition: 0.2s;
+        }
+    </style>
+</head>
+<body class="bg-[#fefefe] selection:bg-amber-400 selection:text-slate-50">
+    <!-- nav bar -->
+    <nav class="mx-4 md:mx-12 p-6">
+        <div class="lg:flex justify-between my-7 items-center relative">
+            <div class="brand-name flex justify-between items-center text-emerald-500 px-2">
+               <a href="./index.html"><h2 class="text-2xl  font-extrabold">Farmino</h2></a>
+                <div class="lg:hidden text-5xl">
+                    <svg id="openMenu" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M3 18v-2h18v2Zm0-5v-2h18v2Zm0-5V6h18v2Z"/></svg>
+                </div>
+            </div>
+            <ul id="topnav" class="hidden lg:flex gap-10">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index.html#product">Products</a></li>
+                <li><a href="./index.html#testimonial">Testimonies</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <ul class="hidden lg:flex gap-10 items-center">
+                <li class="text-emerald-500">
+                    <div class="flex flex-row justify-center items-center">
+                        <div class="px-2 text-[16px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="m18.9 20.3l-5.6-5.6q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075q-.35.975-.95 1.725l5.625 5.625q.275.275.275.675t-.3.7q-.275.275-.7.275q-.425 0-.7-.275ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5Q7.625 5 6.312 6.312Q5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"/></svg>
+                        </div>
+                        <input class="hidden 2xl:block bg-transparent w-80 focus:outline-none mr-2" type="text" placeholder="what would you like for dinner tonight?">
+                    </div>
+                </li>
+                <li><a href="signup.html" class="btn hover:bg-emerald-400">Sign up</a></li>
+            </ul>
+
+            <div class="hidden bg-emerald-500 w-full max-h-fit rounded-sm z-10 absolute top-0 right-4 p-2" id="navBarMobile">
+
+                <div class="bg-white p-4 w-full h-[80%] relative">
+                    <div class="right-4 absolute text-5xl text-emerald-500">
+                        <svg id="closeMenu" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="m12 13.4l-4.9 4.9q-.275.275-.7.275q-.425 0-.7-.275q-.275-.275-.275-.7q0-.425.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7q0-.425.275-.7q.275-.275.7-.275q.425 0 .7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275q.425 0 .7.275q.275.275.275.7q0 .425-.275.7L13.4 12l4.9 4.9q.275.275.275.7q0 .425-.275.7q-.275.275-.7.275q-.425 0-.7-.275Z"/></svg>
+                    </div>
+                    <ul class="flex flex-col gap-8">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./index.html#product">Products</a></li>
+                        <li><a href="./index.html#testimonial">Testimonies</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+
+                    <ul class="mt-2 border-t border-emerald-100">
+                        <li class="text-emerald-500 my-4"><a href="./signup.html">Sign up</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- body section -->
+    <section id="body" class="mt-2 md:py-28 md:mx-20 md:rounded-3xl bg-[#fef3d7]">
+        <div class="flex flex-col space-y-3 items-center justify-center py-8 mx-auto md:w-1/2 bg-white" style="box-shadow:2px 2px 10px gray">
+            <span class="text-2xl text-gray-600">Login</span>
+            <form action="" class="flex flex-col space-y-4 items-end justify-center p-3 w-72">
+                <input type="text" id="login" class="title py-2 px-4 min-w-0 border w-full rounded-md hover:outline-one hover:border-gray-300 hover:outline-gray-400 focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-emerald-400" placeholder="Email/Contact">
+                <input type="Password" name="password" id="" placeholder="Password" class="title py-2 px-4 min-w-0 border w-full rounded-md hover:outline-one hover:border-gray-300 hover:outline-gray-400 focus:outline-none focus ring-1 focus:ring-offset-2 focus:ring-emerald-400">
+                <a href="#" class="text-slate-600">Forgot password?</a>
+                <input type="submit" value="Login" class="bg-emerald-600 py-2 px-4 rounded-md text-white hover:bg-emerald-400">
+            </form>
+            <span class="text-base text-gray-600">Continue with ...</span>
+            <div class="flex flex-row justify-center items-center">
+                <a href="#" class="mr-3 p-4 bg-red-400 rounded-full hover:scale-105 transition-transform block md:hidden"><img src="assets/google.svg" alt="continue with google"></a>
+                <a href="#" class="ml-3 p-4 bg-blue-400 rounded-full hover:scale-105 transition-transform block md:hidden"><img src="assets/facebook.svg" alt="continue with facebook"></a>
+                <a href="#" class="mr-3 text-base text-white bg-red-400 hover:scale-105 transition-transform px-2 py-1 hidden md:block">Google</a>
+                <a href="#" class="ml-3 text-base text-white bg-blue-400 hover:scale-105 transition-transform px-2 py-1 hidden md:block">Facebook</a>
+            </div>
+            <span class="text-base text-slate-600"> <a href="signup.html">Don't have an account? ...</a></span>
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <footer class="md:mt-32 relative" >
+
+        <div class="bg-[#f1f6ed] px-5 pt-24 pb-14" id="contact">
+                <div class="news-paper">
+                    <div class="flex flex-col items-center md:items-end mx-10 mb-14 md:mr-24">
+                        <div class="mb-6 text-center">
+                            <h2 class="text-2xl font-bold mb-2">Subscribe to the newsletter</h2>
+                            <p class="text-[14px] text-slate-500">you will get a 20% discount on your first order</p>
+    
+                        </div>
+                        <div class="flex items-center flex-wrap gap-4">
+                            <div class="bg-white border px-5 py-1 rounded-md">
+                                <input type="email" name="email" id="email" placeholder="Enter your email" class="input-btn">
+                            </div>
+                            <a href="" class="btn">Subscribe</a>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 text-[12px] place-items-center sm:place-items-start">
+                    <div class="md:w-[350px] pr-5 md:ml-10">
+                        <h2 class="text-emerald-500 font-extrabold pb-2 text-center sm:text-start">FARMINO</h2>
+                        <p class="hidden sm:block text-[12px] pb-5">Best place for order food from farmers.
+                            vegetables and products directly from the farm to 
+                            your door. 
+                            Serve as a link to between farmers and customers, by providing a platform 
+                            for farmers and cooperatives to enjoy their hand work with a readily available market
+                        </p>
+    
+                        <div class="flex gap-5 items-center">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M19.83 8v.52A11.41 11.41 0 0 1 8.35 20a11.41 11.41 0 0 1-6.2-1.81h1a8.09 8.09 0 0 0 5-1.73a4 4 0 0 1-3.78-2.8a4.81 4.81 0 0 0 .77.06a4.66 4.66 0 0 0 1.06-.13A4 4 0 0 1 3 9.67a4.13 4.13 0 0 0 1.82.51A4.06 4.06 0 0 1 3 6.77a4 4 0 0 1 .54-2A11.47 11.47 0 0 0 11.85 9a4.71 4.71 0 0 1-.1-.92a4 4 0 0 1 7-2.77a7.93 7.93 0 0 0 2.56-1a4 4 0 0 1-1.78 2.22a7.94 7.94 0 0 0 2.33-.62a8.91 8.91 0 0 1-2 2.09Z"/></svg>
+                            </div> <!--Twitter-->
+    
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path fill="currentColor" d="M128 80a48 48 0 1 0 48 48a48 48 0 0 0-48-48Zm0 80a32 32 0 1 1 32-32a32.1 32.1 0 0 1-32 32Zm44-132H84a56 56 0 0 0-56 56v88a56 56 0 0 0 56 56h88a56 56 0 0 0 56-56V84a56 56 0 0 0-56-56Zm40 144a40 40 0 0 1-40 40H84a40 40 0 0 1-40-40V84a40 40 0 0 1 40-40h88a40 40 0 0 1 40 40Zm-20-96a12 12 0 1 1-12-12a12 12 0 0 1 12 12Z"/></svg>
+                            </div> <!--instagram-->
+    
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M20.9 2H3.1A1.1 1.1 0 0 0 2 3.1v17.8A1.1 1.1 0 0 0 3.1 22h9.58v-7.75h-2.6v-3h2.6V9a3.64 3.64 0 0 1 3.88-4a20.26 20.26 0 0 1 2.33.12v2.7H17.3c-1.26 0-1.5.6-1.5 1.47v1.93h3l-.39 3H15.8V22h5.1a1.1 1.1 0 0 0 1.1-1.1V3.1A1.1 1.1 0 0 0 20.9 2Z"/></svg>
+                            </div> <!--Facebook-->
+                        </div>
+                    </div>
+    
+                    <div class="hidden lg:grid grid-cols-2 my-4 sm:my-0 bl">
+    
+                        <div class="md:ml-20">
+                            
+                            <ul>
+                                <li class="font-extrabold pb-2">Features</li>
+                                <li class="pb-2"><a href="./index.html">Home</a></li>
+                                <li class="pb-2"><a href="./index.html#product">Products</a></li>
+                                <li class="pb-2"><a href="./index.html#testimonial">Testimonies</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+    
+                        <div>
+                            
+                            <ul>
+                                <li class="font-extrabold pb-2">Solution</li>
+                                <li class="pb-2"><a href="">FAQs</a></li>
+                                <li class="pb-2"><a href="">Privacy Policy</a></li>
+                                <li class="pb-2"><a href="">Terms and Condition</a></li>
+                                <li><a href="">Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="mt-6 sm:mt-0">
+                        
+                        <ul class="flex flex-col sm:items-start items-center">
+                            <li class="font-extrabold pb-2">Contact</li>
+                            <li class="flex items-center pb-2">
+                                <div class="mr-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12q.825 0 1.413-.588Q14 10.825 14 10t-.587-1.413Q12.825 8 12 8q-.825 0-1.412.587Q10 9.175 10 10q0 .825.588 1.412Q11.175 12 12 12Zm0 7.35q3.05-2.8 4.525-5.088Q18 11.975 18 10.2q0-2.725-1.738-4.463Q14.525 4 12 4Q9.475 4 7.737 5.737Q6 7.475 6 10.2q0 1.775 1.475 4.062Q8.95 16.55 12 19.35Zm0 2.275q-.2 0-.4-.075t-.35-.2Q7.6 18.125 5.8 15.363Q4 12.6 4 10.2q0-3.75 2.413-5.975Q8.825 2 12 2t5.587 2.225Q20 6.45 20 10.2q0 2.4-1.8 5.163q-1.8 2.762-5.45 5.987q-.15.125-.35.2q-.2.075-.4.075ZM12 10.2Z"/></svg> 
+                                </div><!--Location-->
+                                <p>First Trust, Buea Cameroon</p>
+                            </li>
+    
+                            <li class="flex items-center pb-2">
+                                <div class="mr-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4" d="M16.996 7.686a2 2 0 0 1 1.749 1.03l2.446 4.406a2 2 0 0 1 .04 1.865l-2.356 4.714s.683 3.511 3.541 6.37c2.859 2.858 6.358 3.53 6.358 3.53l4.713-2.357a2 2 0 0 1 1.866.04l4.42 2.458A2 2 0 0 1 40.8 31.49v5.073c0 2.584-2.4 4.45-4.848 3.624c-5.028-1.697-12.833-4.927-17.78-9.874c-4.946-4.947-8.177-12.751-9.873-17.78c-.826-2.447 1.04-4.847 3.624-4.847h5.072Z"/></svg> 
+                                </div><!--Telephone-->
+                                <p>+237 670 000 000</p>    
+                            </li>
+    
+                            <li class="flex items-center">
+                                <div class="mr-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="m20 8l-8 5l-8-5V6l8 5l8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"/></svg> <!--Email-->
+                                </div>
+                                <p>office@farmino.com</p>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            <p class="mt-6 text-[12px] text-center text-slate-400">&copy; 2022 FARMINO All Rights Reserved</p>
+        </div>
+        </footer>
+
+    
+<script src="./main.js"></script>
+</body>
+</html>
