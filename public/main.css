@@ -860,10 +860,17 @@ select {
   margin-right: 1rem;
 }
 
+.my-16 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+
 
 .my-16 {
   margin-top: 4rem;
@@ -1109,6 +1116,7 @@ select {
 .justify-start {
   justify-content: flex-start;
 }
+
 
 .justify-end {
   justify-content: flex-end;
@@ -2172,6 +2180,12 @@ select {
     padding-right: 2rem;
   }
 
+  .md\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+
   .md\:px-14 {
     padding-left: 3.5rem;
     padding-right: 3.5rem;
@@ -2181,6 +2195,7 @@ select {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
+
 
   .md\:px-16 {
     padding-left: 4rem;
@@ -2268,6 +2283,7 @@ select {
     padding-left: 16rem;
     padding-right: 16rem;
   }
+
 
   .\32xl\:px-2 {
     padding-left: 0.5rem;
